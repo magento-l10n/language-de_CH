@@ -2311,6 +2311,7 @@ Total:,Gesamtsumme:
 "My billing and shipping address are the same","Meine Rechnungs- und Lieferanschrift sind identisch"
 Update,Aktualisieren
 "Save in address book","Im Adressbuch speichern"
+"Sorry, no quotes are available for this order at this time","Für diese Bestellung sind derzeit leider keine Angebote verfügbar"
 "Estimated Total","Geschätzte Gesamtkosten"
 "You can create an account after checkout.","Nach dem Kauf können Sie ein Benutzerkonto erstellen."
 "You already have an account with us. Sign in or continue as guest.","Sie haben bereits ein Konto bei uns. Melden Sie sich an oder kaufen Sie als Gast bei uns ein."
@@ -9586,6 +9587,7 @@ error-message,Fehlermeldung
 "View Product","Produkt anzeigen"
 "This Wish List has no Items","Diese Wunschliste enthält keine Artikel"
 "%1 has been added to your Wish List.","%1 wurde zu Ihrer Wunschliste hinzugefügt."
+"%1 has been removed from your Wish List.","%1 wurde von Ihrer Wunschliste entfernt."
 "RSS link to %1's wishlist","RSS-Link zu %1's Wunschliste"
 "RSS Feed",RSS-Feed
 "Wish List is empty now.","Die Wunschliste ist nun leer."
@@ -9659,6 +9661,7 @@ Worldpay,WorldPay
 "If you have questions about your order, you can email us at <a href=""mailto:%store_email"">%store_email</a>.","Wenn Sie fragen bezüglich Ihrer Bestellung haben, können Sie uns über die E-Mail-Adresse <a href=""mailto:%store_email"">%store_email</a> kontaktieren."
 "Backup options",Sicherungsoptionen
 Warning,Warnhinweis
+"Insert Variable","Variable einfügen"
 "Recent items","Kürzlich verwendete Elemente"
 "Show all...","Alle anzeigen..."
 "Please enter a number greater 0 in this field.","In diesem Feld bitte eine Zahl größer 0 eingeben."
