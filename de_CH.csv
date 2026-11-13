@@ -2637,12 +2637,12 @@ Blocked,Gesperrt
 "Company admin",Firmen-Admin
 "Company user",Unternehmensbenutzer
 "Individual user","Einzelner Nutzer"
+"Invalid value of ""%value"" provided for the %fieldName field.","Ungültiger Wert ""%value"" für Feld %fieldName."
 "Unable to set ""allow"" for the resource because its parent resource(s) is set to ""deny"".","Es ist nicht möglich, die Ressource auf ""erlauben"" zu setzen, da ihre übergeordnete Ressource(n) auf ""ablehnen"" gesetzt ist."
 "Invalid login or password.","Ungültiger Benutzername oder Passwort."
 "This account is locked.","Das Konto ist gesperrt."
 "Your account is not yet approved. If you have questions, please contact the seller.","Ihr Konto ist noch nicht freigeschaltet. Wenn Sie Fragen haben, kontaktieren Sie bitte den Verkäufer."
 "There was an error saving custom attributes.","Beim Speichern des Kundenattributs ist ein Fehler aufgetreten."
-"Invalid value of ""%value"" provided for the %fieldName field.","Ungültiger Wert ""%value"" für Feld %fieldName."
 """%fieldName"" is required. Enter and try again.","""%fieldName"" ist erforderlich. Bitte eingeben und erneut versuchen."
 "No such entity with %fieldName = %fieldValue","Keine Eintrag mit %fieldName = %fieldValue"
 "This role cannot be deleted because users are assigned to it. Reassign the users to another role to continue.","Diese Rolle kann nicht gelöscht werden, da ihr Benutzer zugewiesen sind. Weisen Sie den Benutzern eine andere Rolle zu, um fortzufahren."
@@ -2657,13 +2657,12 @@ Blocked,Gesperrt
 "Could not save company: %1","Die Firma konnte nicht gespeichert werden: %1"
 "Cannot delete structure with id %1","Struktur mit ID %1 kann nicht gelöscht werden"
 "Could not create team","Team konnte nicht erstellt werden"
-"This team has child users or teams aligned to it and cannot be deleted. Please re-align the child users or teams first.","Dieses Team hat untergeordnete Nutzer und Teams und kann nicht gelöscht werden. Bitte weisen Sie die Nutzer und Teams zuerst neu zu."
 "Could not update team","Team konnte nicht aktualisiert werden"
 "Cannot delete team with id %1","Team mit der ID %1 konnte nicht gelöscht werden"
 "You cannot assign a different role to a company admin.","Sie können einem Firmen-Admin keine andere Rolle zuweisen."
 "You cannot assign multiple roles to a user.","Sie können einem Benutzer nicht mehreren Rollen zuweisen."
-"Cannot delete the company admin. Delete operation has been stopped. Please repeat the action for the other customers.","Firmen-Admin kann nicht gelöscht werden. Der Löschvorgang wurde gestoppt. Bitte wiederholen Sie die Aktion für andere Kunden."
 "Something went wrong","Es ist ein Fehler aufgetreten"
+"Cannot delete the company admin. Delete operation has been stopped. Please repeat the action for the other customers.","Firmen-Admin kann nicht gelöscht werden. Der Löschvorgang wurde gestoppt. Bitte wiederholen Sie die Aktion für andere Kunden."
 "This customer company account is blocked and customer cannot place orders.","Das Kunden-Firmen-Konto ist blockiert und der Kunde kann keine Bestellungen tätigen."
 "The consumer isn't authorized to access resource.","Der Verbraucher ist nicht berechtigt, auf diese Ressource zuzugreifen."
 " - Duplicated"," - Dupliziert"
@@ -2682,6 +2681,7 @@ Duplicate,Kopieren
 "Company Name",Firmenname
 "Customer Type:",Kundentyp:
 Company:,Firma:
+"User Role",Benutzerrolle
 "Company Information",Unternehmensinformation
 "Company Legal Name","Rechtlicher Name des Unternehmens"
 "Company Email",Firmen-E-Mail
@@ -2700,7 +2700,6 @@ Company:,Firma:
 "Add Team","Team hinzufügen"
 "Edit Selected","Auswahl bearbeiten"
 "Delete Selected","Auswahl löschen"
-"User Role",Benutzerrolle
 "Team Title","Titel des Teams"
 "You don't have a company account yet.","Sie haben noch kein Unternehmenskonto."
 "VAT/TAX ID: ","USt.-ID: "
@@ -2710,11 +2709,18 @@ Contacts,Kontakte
 "Role Information",Rolleninformationen
 "Role Permissions",Rollenberechtigungen
 "Save Role","Rolle speichern"
+"This action cannot be undone. Are you sure you want to delete this user?","Diese Aktion kann nicht rückgängig gemacht werden. Sind Sie sicher, dass Sie diesen Benutzer löschen möchten?"
 "Add New User","Neuen Benutzer hinzufügen"
 "Create an Account","Ein Konto erstellen"
+"Change Customer Group?","Kundengruppe ändern?"
+"This customer is a user of a different company. If you proceed, the customer will be unlinked from the current company and linked to the selected company.","Dieser Kunde ist ein Nutzer einer anderen Firma. Wenn Sie fortfahren, wird der Kunde von seiner aktuellen Firma entfernt und der ausgewählten Firma zugeordnet."
+"Change Company?","Firma ändern?"
+"Your account is now active. You can use it to login to the <a href=""%customer_url"">website</a>.","Ihr Konto ist jetzt aktiv. Sie können es verwenden, um sich auf der <a href=""%customer_url"">Website</a> einzuloggen."
+"Your account is no longer active. You will not be able to use it for login.","Ihr Konto ist nicht mehr aktiv. Sie können es nicht für den Login verwenden."
 "This action will replace your Company Admin.","Diese Aktion ersetzt Ihren Firmen-Administrator."
 "* Your latest changes on the company profile have not been saved yet.","* Ihre neuesten Änderungen am Firmenprofil wurden noch nicht gespeichert."
 "Dear %name,","Hallo %name,"
+"Your account has been set to inactive and you cannot now access the company account. If you think this is a mistake, please contact your manager for details.","Ihr Konto wurde auf inaktiv gesetzt und kann jetzt nicht auf das Firmenkonto zugreifen. Wenn Sie glauben, dass dies ein Fehler ist, kontaktieren Sie bitte Ihren Manager für Details."
 "You have been assigned to <a href=""%customer_url"">%company_name</a> as the Company Admin.","Sie wurden <a href=""%customer_url"">%company_name</a> als Firmen-Admin zugewiesen."
 "When you sign in to your account, you can:","Wenn Sie sich in Ihr Benutzerkonto einloggen, können Sie:"
 "* Create and manage company users and teams","* Firmenbenutzer und -teams erstellen und verwalten"
@@ -2728,10 +2734,7 @@ erhalten Sie Zugriff auf die Ressourcen Ihrer Firma."
 "If this is a mistake,
     please contact the company Admin at %company_admin_email.","Falls dies ein Fehler ist, 
 kontaktieren Sie bitte den Firmen-Admin unter %company_admin_email."
-"Your account is now active. You can use it to login to the <a href=""%customer_url"">website</a>.","Ihr Konto ist jetzt aktiv. Sie können es verwenden, um sich auf der <a href=""%customer_url"">Website</a> einzuloggen."
-"Your account is no longer active. You will not be able to use it for login.","Ihr Konto ist nicht mehr aktiv. Sie können es nicht für den Login verwenden."
 "If this is a mistake, please contact the seller.","Falls dies ein Fehler ist, kontaktieren Sie bitte den Verkäufer."
-"Your account has been set to inactive and you cannot now access the company account. If you think this is a mistake, please contact your manager for details.","Ihr Konto wurde auf inaktiv gesetzt und kann jetzt nicht auf das Firmenkonto zugreifen. Wenn Sie glauben, dass dies ein Fehler ist, kontaktieren Sie bitte Ihren Manager für Details."
 "A company registration request has been submitted by customer %customer. The account is temporarily locked until you approve or reject this company.","Eine Firmenregistrierungsanfrage wurde vom Kunden %customer eingereicht. Das Konto ist vorübergehend gesperrt, bis Sie diese Firma freischalten oder ablehnen."
 "Company: %company","Firma: %company"
 "Your company registration request (for the <strong>%company_name</strong>)
@@ -2776,8 +2779,6 @@ Proceed,Fortfahren
 "This user cannot be deleted because he/she is a company admin.","Dieser Nutzer kann nicht gelöscht werden, da er/sie Firmen-Admin ist."
 "Edit User","Benutzer bearbeiten"
 "Cannot Delete User","Nutzer kann nicht gelöscht werden"
-"Delete this user?","Diesen Benutzer löschen?"
-"This action cannot be undone. Are you sure you want to delete this user?","Diese Aktion kann nicht rückgängig gemacht werden. Sind Sie sicher, dass Sie diesen Benutzer löschen möchten?"
 "Edit Team","Team bearbeiten"
 "Cannot Delete This Team","Dieses Team kann nicht gelöscht werden"
 "Delete this team?","Dieses Team löschen?"
@@ -2786,7 +2787,6 @@ Proceed,Fortfahren
 "This action cannot be undone. Are you sure you want to delete this role?","Diese Aktion kann nicht rückgängig gemacht werden. Sind Sie sicher, dass Sie diese Rolle löschen möchten?"
 "Cannot Delete Role","Rolle kann nicht gelöscht werden"
 "Cannot Delete Customer","Kunde kann nicht gelöscht werden"
-"Set Inactive","Inaktiv setzen"
 "User with this email already exists in the system. Enter a different email address to continue. If you want to use your current account as an administrator account, please contact the seller.","Benutzer mit dieser E-Mail-Adresse existiert bereits im System. Geben Sie eine andere E-Mail-Adresse ein um weiterzumachen. Wenn Sie Ihr aktuelles Konto als ein Administratorkonto verwenden möchten, kontaktieren Sie den Verkäufer."
 "Enable Company","Unternehmen freischalten"
 "Company Configuration",Unternehmenskonfiguration
@@ -2843,6 +2843,7 @@ Comment,Kommentar
 ZIP,PLZ
 "Company Admin",Firmen-Admin
 Gender,Geschlecht
+"Set Inactive","Inaktiv setzen"
 "Customer Type",Kundentyp
 "Are you sure you want to temporarily disable this company account? If you confirm, login for all company members will be blocked.","Sind Sie sicher, dass Sie dieses Firmenkonto vorübergehend deaktivieren möchten? Wenn Sie bestätigen, wird der Login für Firmenmitglieder blockiert."
 "Are you sure you want to set this company to active? If you confirm, the company members will be able to operate within their company account.>","Sind Sie sicher, dass Sie dieses Unternehmen auf aktiv setzen möchten? Wenn Sie bestätigen, können die Firmenmitglieder innerhalb ihres Firmenkontos arbeiten.>"
@@ -2854,12 +2855,9 @@ Gender,Geschlecht
 "VAT / TAX ID",USt.-ID
 Prefix,Präfix
 "Middle Name/Initial","Zweiter Vorname"
-"Change Customer Group?","Kundengruppe ändern?"
 "This action will change the customer group for all members of this company. Would you like to proceed?","Diese Aktion wird die Kundengruppe für alle Mitglieder der Firma ändern. Möchten Sie fortfahren?"
 "The user <%- username %> is the company admin and cannot be set to inactive. You must set another user as the company admin first.","Der Benutzer <%- username %> ist der Firmen-Admin und kann nicht auf inaktiv gesetzt werden. Sie müssen zuerst einen anderen Benutzer als Firmen-Admin festlegen."
 "Customer Active","Kunde aktiv"
-"This customer is a user of a different company. If you proceed, the customer will be unlinked from the current company and linked to the selected company.","Dieser Kunde ist ein Nutzer einer anderen Firma. Wenn Sie fortfahren, wird der Kunde von seiner aktuellen Firma entfernt und der ausgewählten Firma zugeordnet."
-"Change Company?","Firma ändern?"
 "Associate to Company","Firma zuweisen"
 "My Orders","Meine Bestellungen"
 "Create New Customer","Neuen Kunden erstellen"
